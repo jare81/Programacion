@@ -909,8 +909,8 @@ public class Dubon_Jareny_Proyecto1 {
                              
                     
                     System.out.println("\n4. Valor Medio de Compra y Venta "
-                                   + "\n\nValor Medio de Compra: " + medio_compradecimal
-                                   + "\nValor Medio de Venta: " + medio_ventadecimal);
+                                   + "\n\nValor Medio de Compra: L. " + medio_compradecimal
+                                   + "\nValor Medio de Venta: L. " + medio_ventadecimal);
                     System.out.println("\n--------------------------------------------------------------------");
                     
                     System.out.println("--------------------------------------------------------------------");
