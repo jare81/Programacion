@@ -24,7 +24,7 @@ public class Dubon_Jareny_Proyecto1 {
         
         
         
-        double banco=0; boolean caja=true;
+        double banco=0; boolean caja=false;
         
         do {
             
@@ -45,6 +45,7 @@ public class Dubon_Jareny_Proyecto1 {
             switch(opcion) {
                 
                 case "1": 
+                    caja=true;
                     System.out.println("\n                  *** ABRIR CAJA *** " );
                     System.out.println("                  ------------------");
                     
@@ -943,6 +944,15 @@ public class Dubon_Jareny_Proyecto1 {
                 case "5": 
                     System.out.println("\n                  *** CIERRE DE CAJA *** ");
                     System.out.println("                   ---------------------");
+                    
+                     if(caja==false){
+                    System.out.println("La caja esta cerrada");
+                    System.out.println("Favor ir a ABRIR CAJA \n");
+
+                    break;
+
+                    }else {System.out.println("");
+                    
                    montoCajaformat= String.format("%.2f", montoCaja);
                    margen_ganancia= volum_ventas-volum_compras;
                    ganandecimal= String.format("%.2f", margen_ganancia);
@@ -1004,6 +1014,7 @@ public class Dubon_Jareny_Proyecto1 {
                    rank1 = Integer.MIN_VALUE; rank2 = Integer.MIN_VALUE; rank3 = Integer.MIN_VALUE; rank4 = Integer.MIN_VALUE;
                     
                     
+                }
       
                     break;
    
