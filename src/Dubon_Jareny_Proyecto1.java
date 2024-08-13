@@ -612,8 +612,8 @@ public class Dubon_Jareny_Proyecto1 {
                         
                         System.out.println("-------------------------------------");
                         System.out.println("Subtotal:                      L." + subtotalCompra);
-                        System.out.println("Descuentos y rebajas:          L.0" );
-                        System.out.println("I.S.V 7%:                      L.0" );
+                        System.out.println(" " );
+                        
                         
                         System.out.println("\nTOTAL A PAGAR:               L." + subtotalCompra);
                         System.out.println("--------------------------------------");
