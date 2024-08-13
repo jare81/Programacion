@@ -246,7 +246,7 @@ public class Dubon_Jareny_Proyecto1 {
                          producto="Azucar";
                          precio=30;
                          producto_descripcion="kg    Azucar  L.30 ";
-                         //asignar existencia dependiendo del producto que elija 
+                         //asignar existencia 
                          existencia=compraAzucar;
                        }
                      
@@ -254,7 +254,7 @@ public class Dubon_Jareny_Proyecto1 {
                          producto="Avena";
                          precio=25;
                          producto_descripcion="kg    Avena   L.25 ";
-                         //asignar existencia dependiendo del producto que elij
+                         //asignar existencia 
                          existencia=compraAvena;
                       }
                      
@@ -262,7 +262,7 @@ public class Dubon_Jareny_Proyecto1 {
                          producto="Trigo";
                          precio=32;
                          producto_descripcion="kg    Trigo   L.32 ";
-                         //asignar existencia dependiendo del producto que elij
+                         //asignar existenciaa
                          existencia=compraTrigo;
                       }
                        
@@ -377,6 +377,7 @@ public class Dubon_Jareny_Proyecto1 {
                        
                        String descimal=String.format("%.2f", descuento);
                        String impcimal=String.format("%.2f", impuesto);
+                       String totalfinaldecimal=String.format("%.2f", total_final);
                   cant_ventas++;//aumentar contador ventas     
                        
                        
@@ -399,7 +400,7 @@ public class Dubon_Jareny_Proyecto1 {
                         System.out.println("Descuentos y rebajas:         L." + descimal);
                         System.out.println("I.S.V 7%:                     L." + impcimal );
                         
-                        System.out.println("\nTOTAL A PAGAR:                L." + total_final);
+                        System.out.println("\nTOTAL A PAGAR:                L." + totalfinaldecimal);
                         System.out.println("--------------------------------------\n");
                         
                         
