@@ -32,6 +32,8 @@ public class Dubon_Jareny_BiArray {
         int disminuye=(cantidad-1);
         int sumaPrincipal=0;
         int sumaSecundaria=0;
+        String Principal="";
+        String Secundaria="";
         
         for (int filas = 0; filas <numeros.length ; filas++) {
             
@@ -45,7 +47,10 @@ public class Dubon_Jareny_BiArray {
                  
                 }
             sumaPrincipal = sumaPrincipal + numeros[filas][aumenta] ;
+            Principal = Principal  + numeros[filas][aumenta] + " + ";
+            
             sumaSecundaria= sumaSecundaria+ numeros[filas][(disminuye)];
+            Secundaria= Secundaria + numeros[filas][(disminuye)] + " + ";
             aumenta++;
             disminuye--;
             System.out.println("");
@@ -53,8 +58,16 @@ public class Dubon_Jareny_BiArray {
             
             }
         
-          System.out.println("\nSuma de la Diagonal Principal " + sumaPrincipal);  
-          System.out.println("Suma de la Diagonal Secundaria: " + sumaSecundaria);
+        if (Principal.endsWith(" + ")) {
+            Principal = Principal.substring(0, Principal.length() - 3);
+        }
+        if (Secundaria.endsWith(" + ")) {
+            Secundaria = Secundaria.substring(0, Secundaria.length() - 3);
+        }
+        
+          System.out.println("\nSuma de la Diagonal Principal :  " + Principal + " = " +sumaPrincipal ); 
+          
+          System.out.println("Suma de la Diagonal Secundaria: " + Secundaria + " = " +  sumaSecundaria);
             
         }
         
